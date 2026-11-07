@@ -1,0 +1,25 @@
+# Render blueprint — deploy the OfferLens API as a web service.
+# Docs: https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: offerlens-api
+    runtime: python
+    plan: free
+    region: singapore
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.7"
+      - key: ENVIRONMENT
+        value: "DEMO WORKSPACE"
+      - key: SEED_ON_STARTUP
+        value: "true"
+      # SQLite on the service's ephemeral disk. Swap for a Postgres URL to persist.
+      - key: DATABASE_URL
+        value: "sqlite:///./offerlens.db"
+      # Tighten later if you want an explicit allow-list instead of the default
+      # regex that already accepts *.netlify.app.
+      - key: CORS_ORIGINS
+        value: "http://localhost:5173"

@@ -1,0 +1,2338 @@
+{
+  "provenance": {
+    "dataset": "OfferLens synthetic demonstration dataset",
+    "license": "MIT (code) / CC0-style synthetic records",
+    "notes": [
+      "Supplier names (Atlas, Meridian, Horizon), property IDs, prices and rate plans are synthetic.",
+      "This is not TBO inventory and must not be represented as such.",
+      "Attraction and city names are real-world anchors; coordinates are approximate."
+    ]
+  },
+  "suppliers": [
+    {
+      "code": "ATLAS",
+      "name": "Supplier Atlas",
+      "tier": "Direct connect"
+    },
+    {
+      "code": "MERIDIAN",
+      "name": "Supplier Meridian",
+      "tier": "Aggregator"
+    },
+    {
+      "code": "HORIZON",
+      "name": "Supplier Horizon",
+      "tier": "Channel manager"
+    }
+  ],
+  "product_groups": [
+    {
+      "code": "HG-1001",
+      "category": "hotel",
+      "canonical_name": "The Grand Imperial, New Delhi",
+      "city": "New Delhi",
+      "region": "Delhi NCR",
+      "address": "Janpath Road, Connaught Place, New Delhi 110001",
+      "star_rating": 5.0,
+      "latitude": 28.625,
+      "longitude": 77.2195,
+      "status": "confirmed",
+      "description": "A 5-star heritage-style business hotel on Janpath, walking distance from Connaught Place, with an outdoor pool, spa and three dining venues.",
+      "listings": [
+        {
+          "supplier": "Supplier Atlas",
+          "supplier_property_id": "GP-DEL-10021",
+          "name": "Grand Imperial Hotel Delhi",
+          "address": "Janpath Road, Connaught Place, New Delhi 110001",
+          "latitude": 28.6251,
+          "longitude": 77.2193,
+          "star_rating": 5.0,
+          "amenities": [
+            "Free WiFi",
+            "Outdoor pool",
+            "Spa",
+            "Fitness centre",
+            "Restaurant",
+            "Bar",
+            "Airport transfer",
+            "Business centre"
+          ],
+          "content_completeness": 92,
+          "match_confidence": 0.8787,
+          "rooms": [
+            {
+              "room_category": "Deluxe King",
+              "equivalence_class": "deluxe_king",
+              "bed_type": "King bed",
+              "view": "City view",
+              "max_occupancy": 3,
+              "rate_plans": [
+                {
+                  "base_price": 5000.0,
+                  "meal_plan": "Breakfast",
+                  "refundable": true,
+                  "cancellation_deadline_hours": 24,
+                  "payment_terms": "Pay now",
+                  "rooms_available": 6
+                }
+              ]
+            },
+            {
+              "room_category": "Executive Suite",
+              "equivalence_class": "executive_suite",
+              "bed_type": "King bed",
+              "view": "Pool view",
+              "max_occupancy": 4,
+              "rate_plans": [
+                {
+                  "base_price": 9200.0,
+                  "meal_plan": "Breakfast",
+                  "refundable": true,
+                  "cancellation_deadline_hours": 48,
+                  "payment_terms": "Pay now",
+                  "rooms_available": 2
+                }
+              ]
+            }
+          ],
+          "activities": []
+        },
+        {
+          "supplier": "Supplier Meridian",
+          "supplier_property_id": "MRD-88213",
+          "name": "The Grand Imperial New Delhi",
+          "address": "Janpath, Connaught Place, New Delhi",
+          "latitude": 28.6248,
+          "longitude": 77.2201,
+          "star_rating": 5.0,
+          "amenities": [
+            "WiFi",
+            "Pool",
+            "Spa",
+            "Gym",
+            "Restaurant",
+            "Room service",
+            "Parking"
+          ],
+          "content_completeness": 74,
+          "match_confidence": 0.8787,
+          "rooms": [
+            {
+              "room_category": "King Deluxe",
+              "equivalence_class": "deluxe_king",
+              "bed_type": "King bed",
+              "view": "City view",
+              "max_occupancy": 2,
+              "rate_plans": [
+                {
+                  "base_price": 4500.0,
+                  "meal_plan": "Room only",
+                  "refundable": false,
+                  "cancellation_deadline_hours": null,
+                  "payment_terms": "Pay now",
+                  "rooms_available": 9
+                }
+              ]
+            },
+            {
+              "room_category": "Suite",
+              "equivalence_class": "executive_suite",
+              "bed_type": "Not specified",
+              "view": "Not specified",
+              "max_occupancy": 3,
+              "rate_plans": [
+                {
+                  "base_price": 8700.0,
+                  "meal_plan": "Breakfast",
+                  "refundable": false,
+                  "cancellation_deadline_hours": null,
+                  "payment_terms": "Deposit 20%",
+                  "rooms_available": 3
+                }
+              ]
+            }
+          ],
+          "activities": []
+        },
+        {
+          "supplier": "Supplier Horizon",
+          "supplier_property_id": "HZN-IN-4471",
+          "name": "Grand Imperial, Central Delhi",
+          "address": "Janpath Marg, Connaught Place, Central Delhi",
+          "latitude": 28.6255,
+          "longitude": 77.2188,
+          "star_rating": 5.0,
+          "amenities": [
+            "Free WiFi",
+            "Swimming pool",
+            "Spa",
+            "Fitness centre",
+            "Restaurant",
+            "Bar",
+            "Concierge",
+            "Room service"
+          ],
+          "content_completeness": 88,
+          "match_confidence": 0.8495,
+          "rooms": [
+            {
+              "room_category": "Deluxe King Room",
+              "equivalence_class": "deluxe_king",
+              "bed_type": "King bed",
+              "view": "City view",
+              "max_occupancy": 3,
+              "rate_plans": [
+                {
+                  "base_price": 5200.0,
+                  "meal_plan": "Breakfast",
+                  "refundable": true,
+                  "cancellation_deadline_hours": 48,
+                  "payment_terms": "Pay at hotel",
+                  "rooms_available": 3
+                }
+              ]
+            }
+          ],
+          "activities": []
+        }
+      ]
+    },
+    {
+      "code": "HG-1002",
+      "category": "hotel",
+      "canonical_name": "The Leela Palace, New Delhi",
+      "city": "New Delhi",
+      "region": "Delhi NCR",
+      "address": "Diplomatic Enclave, Chanakyapuri, New Delhi 110023",
+      "star_rating": 5.0,
+      "latitude": 28.5823,
+      "longitude": 77.1876,
+      "status": "proposed",
+      "description": "Luxury palace-style hotel in Chanakyapuri with landscaped gardens and a large spa.",
+      "listings": [
+        {
+          "supplier": "Supplier Atlas",
+          "supplier_property_id": "GP-DEL-10555",
+          "name": "The Leela Palace, New Delhi",
+          "address": "Diplomatic Enclave, Chanakyapuri, New Delhi 110023",
+          "latitude": 28.5823,
+          "longitude": 77.1876,
+          "star_rating": 5.0,
+          "amenities": [
+            "Free WiFi",
+            "Outdoor pool",
+            "Spa",
+            "Fitness centre",
+            "Restaurant",
+            "Bar",
+            "Butler service"
+          ],
+          "content_completeness": 90,
+          "match_confidence": 0.8599,
+          "rooms": [
+            {
+              "room_category": "Grand Deluxe King",
+              "equivalence_class": "deluxe_king",
+              "bed_type": "King bed",
+              "view": "Garden view",
+              "max_occupancy": 3,
+              "rate_plans": [
+                {
+                  "base_price": 14500.0,
+                  "meal_plan": "Breakfast",
+                  "refundable": true,
+                  "cancellation_deadline_hours": 72,
+                  "payment_terms": "Pay now",
+                  "rooms_available": 4
+                }
+              ]
+            }
+          ],
+          "activities": []
+        },
+        {
+          "supplier": "Supplier Horizon",
+          "supplier_property_id": "HZN-IN-8890",
+          "name": "Leela Palace New Delhi - Chanakyapuri",
+          "address": "Chanakyapuri, New Delhi",
+          "latitude": 28.5831,
+          "longitude": 77.1882,
+          "star_rating": 5.0,
+          "amenities": [
+            "Free WiFi",
+            "Pool",
+            "Spa",
+            "Fitness centre",
+            "Restaurant",
+            "Bar",
+            "Butler service",
+            "Valet parking"
+          ],
+          "content_completeness": 82,
+          "match_confidence": 0.8599,
+          "rooms": [
+            {
+              "room_category": "Deluxe Room King",
+              "equivalence_class": "deluxe_king",
+              "bed_type": "King bed",
+              "view": "Garden view",
+              "max_occupancy": 3,
+              "rate_plans": [
+                {
+                  "base_price": 13900.0,
+                  "meal_plan": "Breakfast",
+                  "refundable": true,
+                  "cancellation_deadline_hours": 48,
+                  "payment_terms": "Pay at hotel",
+                  "rooms_available": 2
+                }
+              ]
+            }
+          ],
+          "activities": []
+        }
+      ]
+    },
+    {
+      "code": "HG-1003",
+      "category": "hotel",
+      "canonical_name": "Taj Palace, New Delhi",
+      "city": "New Delhi",
+      "region": "Delhi NCR",
+      "address": "2 Sardar Patel Marg, Diplomatic Enclave, New Delhi 110021",
+      "star_rating": 5.0,
+      "latitude": 28.5975,
+      "longitude": 77.172,
+      "status": "confirmed",
+      "description": "Large 5-star convention hotel on Sardar Patel Marg with extensive banqueting facilities.",
+      "listings": [
+        {
+          "supplier": "Supplier Atlas",
+          "supplier_property_id": "GP-DEL-10902",
+          "name": "Taj Palace New Delhi",
+          "address": "2 Sardar Patel Marg, New Delhi 110021",
+          "latitude": 28.5975,
+          "longitude": 77.172,
+          "star_rating": 5.0,
+          "amenities": [
+            "Free WiFi",
+            "Outdoor pool",
+            "Spa",
+            "Fitness centre",
+            "Restaurant",
+            "Bar",
+            "Business centre"
+          ],
+          "content_completeness": 94,
+          "match_confidence": 0.8552,
+          "rooms": [
+            {
+              "room_category": "Superior King",
+              "equivalence_class": "deluxe_king",
+              "bed_type": "King bed",
+              "view": "Garden view",
+              "max_occupancy": 3,
+              "rate_plans": [
+                {
+                  "base_price": 11200.0,
+                  "meal_plan": "Breakfast",
+                  "refundable": true,
+                  "cancellation_deadline_hours": 24,
+                  "payment_terms": "Pay now",
+                  "rooms_available": 5
+                }
+              ]
+            }
+          ],
+          "activities": []
+        },
+        {
+          "supplier": "Supplier Meridian",
+          "supplier_property_id": "MRD-88921",
+          "name": "Taj Palace, Sardar Patel Marg",
+          "address": "Sardar Patel Marg, New Delhi",
+          "latitude": 28.5971,
+          "longitude": 77.1725,
+          "star_rating": 5.0,
+          "amenities": [
+            "WiFi",
+            "Pool",
+            "Spa",
+            "Gym",
+            "Restaurant",
+            "Bar",
+            "Business centre",
+            "Parking"
+          ],
+          "content_completeness": 79,
+          "match_confidence": 0.8402,
+          "rooms": [
+            {
+              "room_category": "Superior Room King",
+              "equivalence_class": "deluxe_king",
+              "bed_type": "King bed",
+              "view": "Garden view",
+              "max_occupancy": 2,
+              "rate_plans": [
+                {
+                  "base_price": 10450.0,
+                  "meal_plan": "Room only",
+                  "refundable": false,
+                  "cancellation_deadline_hours": null,
+                  "payment_terms": "Pay now",
+                  "rooms_available": 7
+                }
+              ]
+            }
+          ],
+          "activities": []
+        },
+        {
+          "supplier": "Supplier Horizon",
+          "supplier_property_id": "HZN-IN-5512",
+          "name": "Taj Palace Hotel Delhi",
+          "address": "Sardar Patel Marg, Diplomatic Enclave, New Delhi",
+          "latitude": 28.598,
+          "longitude": 77.1712,
+          "star_rating": 5.0,
+          "amenities": [
+            "Free WiFi",
+            "Outdoor pool",
+            "Spa",
+            "Fitness centre",
+            "Restaurant",
+            "Bar",
+            "Concierge"
+          ],
+          "content_completeness": 86,
+          "match_confidence": 0.8552,
+          "rooms": [
+            {
+              "room_category": "Superior King Bed",
+              "equivalence_class": "deluxe_king",
+              "bed_type": "King bed",
+              "view": "Garden view",
+              "max_occupancy": 3,
+              "rate_plans": [
+                {
+                  "base_price": 11800.0,
+                  "meal_plan": "Breakfast",
+                  "refundable": true,
+                  "cancellation_deadline_hours": 48,
+                  "payment_terms": "Pay at hotel",
+                  "rooms_available": 3
+                }
+              ]
+            }
+          ],
+          "activities": []
+        }
+      ]
+    },
+    {
+      "code": "HG-1004",
+      "category": "hotel",
+      "canonical_name": "ITC Mughal, Agra",
+      "city": "Agra",
+      "region": "Uttar Pradesh",
+      "address": "Taj Ganj, Agra 282001",
+      "star_rating": 5.0,
+      "latitude": 27.1692,
+      "longitude": 78.0403,
+      "status": "proposed",
+      "description": "Mughal-garden resort hotel in Agra with a large spa and views towards the Taj Mahal.",
+      "listings": [
+        {
+          "supplier": "Supplier Atlas",
+          "supplier_property_id": "GP-AGR-20011",
+          "name": "ITC Mughal, Agra",
+          "address": "Taj Ganj, Agra 282001",
+          "latitude": 27.1692,
+          "longitude": 78.0403,
+          "star_rating": 5.0,
+          "amenities": [
+            "Free WiFi",
+            "Outdoor pool",
+            "Spa",
+            "Fitness centre",
+            "Restaurant",
+            "Bar",
+            "Garden"
+          ],
+          "content_completeness": 88,
+          "match_confidence": 0.84,
+          "rooms": [
+            {
+              "room_category": "Mughal King",
+              "equivalence_class": "deluxe_king",
+              "bed_type": "King bed",
+              "view": "Garden view",
+              "max_occupancy": 3,
+              "rate_plans": [
+                {
+                  "base_price": 8600.0,
+                  "meal_plan": "Breakfast",
+                  "refundable": true,
+                  "cancellation_deadline_hours": 24,
+                  "payment_terms": "Pay now",
+                  "rooms_available": 4
+                }
+              ]
+            }
+          ],
+          "activities": []
+        },
+        {
+          "supplier": "Supplier Horizon",
+          "supplier_property_id": "HZN-IN-7745",
+          "name": "ITC Mughal Hotel Agra",
+          "address": "Taj Ganj, Agra",
+          "latitude": 27.1701,
+          "longitude": 78.0411,
+          "star_rating": 4.0,
+          "amenities": [
+            "Free WiFi",
+            "Pool",
+            "Spa",
+            "Restaurant"
+          ],
+          "content_completeness": 71,
+          "match_confidence": 0.84,
+          "rooms": [
+            {
+              "room_category": "Mughal Room",
+              "equivalence_class": "deluxe_king",
+              "bed_type": "King bed",
+              "view": "Not specified",
+              "max_occupancy": 3,
+              "rate_plans": [
+                {
+                  "base_price": 8100.0,
+                  "meal_plan": "Room only",
+                  "refundable": true,
+                  "cancellation_deadline_hours": 24,
+                  "payment_terms": "Pay at hotel",
+                  "rooms_available": 6
+                }
+              ]
+            }
+          ],
+          "activities": []
+        }
+      ]
+    },
+    {
+      "code": "HG-1005",
+      "category": "hotel",
+      "canonical_name": "Hotel Pearl Palace, Jaipur",
+      "city": "Jaipur",
+      "region": "Rajasthan",
+      "address": "Hathroi Fort, Ajmer Road, Jaipur 302001",
+      "star_rating": 3.0,
+      "latitude": 26.9235,
+      "longitude": 75.808,
+      "status": "confirmed",
+      "description": "Boutique heritage guest house near Hathroi Fort with a rooftop restaurant.",
+      "listings": [
+        {
+          "supplier": "Supplier Meridian",
+          "supplier_property_id": "MRD-40118",
+          "name": "Hotel Pearl Palace Jaipur",
+          "address": "Hathroi Fort, Ajmer Road, Jaipur",
+          "latitude": 26.9235,
+          "longitude": 75.808,
+          "star_rating": 3.0,
+          "amenities": [
+            "Free WiFi",
+            "Rooftop restaurant",
+            "Air conditioning",
+            "Laundry"
+          ],
+          "content_completeness": 83,
+          "match_confidence": 0.9229,
+          "rooms": [
+            {
+              "room_category": "Deluxe Double",
+              "equivalence_class": "deluxe_double",
+              "bed_type": "Double bed",
+              "view": "Fort view",
+              "max_occupancy": 2,
+              "rate_plans": [
+                {
+                  "base_price": 2400.0,
+                  "meal_plan": "Breakfast",
+                  "refundable": true,
+                  "cancellation_deadline_hours": 24,
+                  "payment_terms": "Pay at hotel",
+                  "rooms_available": 5
+                }
+              ]
+            }
+          ],
+          "activities": []
+        },
+        {
+          "supplier": "Supplier Horizon",
+          "supplier_property_id": "HZN-IN-9910",
+          "name": "Pearl Palace Hotel, Jaipur",
+          "address": "Ajmer Road, Hathroi Fort, Jaipur",
+          "latitude": 26.924,
+          "longitude": 75.8086,
+          "star_rating": 3.0,
+          "amenities": [
+            "Free WiFi",
+            "Rooftop restaurant",
+            "Air conditioning",
+            "Laundry",
+            "Travel desk"
+          ],
+          "content_completeness": 77,
+          "match_confidence": 0.9229,
+          "rooms": [
+            {
+              "room_category": "Deluxe Room",
+              "equivalence_class": "deluxe_double",
+              "bed_type": "Double bed",
+              "view": "Fort view",
+              "max_occupancy": 2,
+              "rate_plans": [
+                {
+                  "base_price": 2250.0,
+                  "meal_plan": "Room only",
+                  "refundable": false,
+                  "cancellation_deadline_hours": null,
+                  "payment_terms": "Pay now",
+                  "rooms_available": 8
+                }
+              ]
+            }
+          ],
+          "activities": []
+        }
+      ]
+    },
+    {
+      "code": "HG-1006",
+      "category": "hotel",
+      "canonical_name": "The Oberoi, Mumbai",
+      "city": "Mumbai",
+      "region": "Maharashtra",
+      "address": "Nariman Point, Mumbai 400021",
+      "star_rating": 5.0,
+      "latitude": 18.9269,
+      "longitude": 72.8205,
+      "status": "confirmed",
+      "description": "Waterfront luxury hotel at Nariman Point with sea-facing rooms.",
+      "listings": [
+        {
+          "supplier": "Supplier Atlas",
+          "supplier_property_id": "GP-BOM-30001",
+          "name": "The Oberoi Mumbai",
+          "address": "Nariman Point, Mumbai 400021",
+          "latitude": 18.9269,
+          "longitude": 72.8205,
+          "star_rating": 5.0,
+          "amenities": [
+            "Free WiFi",
+            "Outdoor pool",
+            "Spa",
+            "Fitness centre",
+            "Restaurant",
+            "Bar",
+            "Sea view"
+          ],
+          "content_completeness": 93,
+          "match_confidence": 0.8208,
+          "rooms": [
+            {
+              "room_category": "Luxury Sea View King",
+              "equivalence_class": "deluxe_king",
+              "bed_type": "King bed",
+              "view": "Sea view",
+              "max_occupancy": 3,
+              "rate_plans": [
+                {
+                  "base_price": 16800.0,
+                  "meal_plan": "Breakfast",
+                  "refundable": true,
+                  "cancellation_deadline_hours": 48,
+                  "payment_terms": "Pay now",
+                  "rooms_available": 4
+                }
+              ]
+            }
+          ],
+          "activities": []
+        },
+        {
+          "supplier": "Supplier Meridian",
+          "supplier_property_id": "MRD-71204",
+          "name": "Oberoi Hotel, Nariman Point",
+          "address": "Nariman Point, Mumbai",
+          "latitude": 18.9274,
+          "longitude": 72.8211,
+          "star_rating": 5.0,
+          "amenities": [
+            "WiFi",
+            "Pool",
+            "Spa",
+            "Gym",
+            "Restaurant",
+            "Bar",
+            "Sea view"
+          ],
+          "content_completeness": 81,
+          "match_confidence": 0.8208,
+          "rooms": [
+            {
+              "room_category": "Luxury Room Sea View",
+              "equivalence_class": "deluxe_king",
+              "bed_type": "King bed",
+              "view": "Sea view",
+              "max_occupancy": 2,
+              "rate_plans": [
+                {
+                  "base_price": 15950.0,
+                  "meal_plan": "Room only",
+                  "refundable": false,
+                  "cancellation_deadline_hours": null,
+                  "payment_terms": "Pay now",
+                  "rooms_available": 6
+                }
+              ]
+            }
+          ],
+          "activities": []
+        }
+      ]
+    },
+    {
+      "code": "HG-1007",
+      "category": "hotel",
+      "canonical_name": "Radisson Blu Plaza, Delhi Airport",
+      "city": "New Delhi",
+      "region": "Delhi NCR",
+      "address": "National Highway 8, Mahipalpur, New Delhi 110037",
+      "star_rating": 5.0,
+      "latitude": 28.5448,
+      "longitude": 77.1236,
+      "status": "proposed",
+      "description": "Airport hotel near Terminal 3 with a large conference floor.",
+      "listings": [
+        {
+          "supplier": "Supplier Meridian",
+          "supplier_property_id": "MRD-60441",
+          "name": "Radisson Blu Plaza Delhi Airport",
+          "address": "NH-8, Mahipalpur, New Delhi",
+          "latitude": 28.5448,
+          "longitude": 77.1236,
+          "star_rating": 5.0,
+          "amenities": [
+            "Free WiFi",
+            "Outdoor pool",
+            "Spa",
+            "Fitness centre",
+            "Restaurant",
+            "Airport transfer"
+          ],
+          "content_completeness": 86,
+          "match_confidence": 0.8806,
+          "rooms": [
+            {
+              "room_category": "Superior King",
+              "equivalence_class": "deluxe_king",
+              "bed_type": "King bed",
+              "view": "City view",
+              "max_occupancy": 3,
+              "rate_plans": [
+                {
+                  "base_price": 7900.0,
+                  "meal_plan": "Breakfast",
+                  "refundable": true,
+                  "cancellation_deadline_hours": 24,
+                  "payment_terms": "Pay now",
+                  "rooms_available": 5
+                }
+              ]
+            }
+          ],
+          "activities": []
+        },
+        {
+          "supplier": "Supplier Horizon",
+          "supplier_property_id": "HZN-IN-2280",
+          "name": "Radisson Blu Plaza Hotel, NH-8 Delhi",
+          "address": "Mahipalpur, NH-8, New Delhi",
+          "latitude": 28.5455,
+          "longitude": 77.1244,
+          "star_rating": 5.0,
+          "amenities": [
+            "Free WiFi",
+            "Pool",
+            "Spa",
+            "Fitness centre",
+            "Restaurant",
+            "Airport transfer",
+            "Bar"
+          ],
+          "content_completeness": 80,
+          "match_confidence": 0.8806,
+          "rooms": [
+            {
+              "room_category": "Superior Room King Bed",
+              "equivalence_class": "deluxe_king",
+              "bed_type": "King bed",
+              "view": "City view",
+              "max_occupancy": 3,
+              "rate_plans": [
+                {
+                  "base_price": 8100.0,
+                  "meal_plan": "Room only",
+                  "refundable": true,
+                  "cancellation_deadline_hours": 48,
+                  "payment_terms": "Pay at hotel",
+                  "rooms_available": 2
+                }
+              ]
+            }
+          ],
+          "activities": []
+        }
+      ]
+    },
+    {
+      "code": "SG-2001",
+      "category": "sightseeing",
+      "canonical_name": "Taj Mahal Guided Experience, Agra",
+      "city": "Agra",
+      "region": "Uttar Pradesh",
+      "address": "Taj Mahal, Dharmapuri, Forest Colony, Agra 282001",
+      "star_rating": null,
+      "latitude": 27.1751,
+      "longitude": 78.0421,
+      "status": "confirmed",
+      "description": "Guided visit to the Taj Mahal with monument entry. Supplier tour formats differ materially.",
+      "listings": [
+        {
+          "supplier": "Supplier Atlas",
+          "supplier_property_id": "TAJ-AT-01",
+          "name": "Taj Mahal Guided Visit with Transfers",
+          "address": "Taj Mahal East Gate, Agra",
+          "latitude": 27.1751,
+          "longitude": 78.0421,
+          "star_rating": null,
+          "amenities": [
+            "English guide",
+            "Monument entry",
+            "Hotel transfers",
+            "Breakfast"
+          ],
+          "content_completeness": 92,
+          "match_confidence": 0.7926,
+          "rooms": [],
+          "activities": [
+            {
+              "activity_name": "Taj Mahal Guided Visit (4 hours)",
+              "equivalence_class": "taj_guided",
+              "duration_hours": 4.0,
+              "experience_type": "Shared group",
+              "access_type": "Standard entry",
+              "transfers": "Included \u2014 hotel pickup",
+              "included_services": [
+                "Licensed guide",
+                "Monument entry ticket",
+                "Breakfast",
+                "Hotel transfers",
+                "Bottled water"
+              ],
+              "offers": [
+                {
+                  "price": 3200.0,
+                  "meals": "Breakfast included",
+                  "cancellation_policy": "Free cancellation",
+                  "max_group_size": 12,
+                  "slots_available": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "supplier": "Supplier Meridian",
+          "supplier_property_id": "TAJ-MR-22",
+          "name": "Taj Mahal Tour (2 hrs, no transfers)",
+          "address": "Taj Mahal West Gate, Agra",
+          "latitude": 27.1745,
+          "longitude": 78.043,
+          "star_rating": null,
+          "amenities": [
+            "English guide",
+            "Monument entry"
+          ],
+          "content_completeness": 70,
+          "match_confidence": 0.7702,
+          "rooms": [],
+          "activities": [
+            {
+              "activity_name": "Taj Mahal Express Tour (2 hours)",
+              "equivalence_class": "taj_guided",
+              "duration_hours": 2.0,
+              "experience_type": "Shared group",
+              "access_type": "Standard entry",
+              "transfers": "Not included",
+              "included_services": [
+                "Licensed guide",
+                "Monument entry ticket"
+              ],
+              "offers": [
+                {
+                  "price": 1900.0,
+                  "meals": "Not included",
+                  "cancellation_policy": "Non-refundable",
+                  "max_group_size": 15,
+                  "slots_available": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "supplier": "Supplier Horizon",
+          "supplier_property_id": "TAJ-HZ-33",
+          "name": "Taj Mahal Skip-the-Line Guided Experience",
+          "address": "Taj Mahal East Gate, Agra",
+          "latitude": 27.1754,
+          "longitude": 78.0418,
+          "star_rating": null,
+          "amenities": [
+            "English guide",
+            "Skip-the-line entry",
+            "Hotel transfers"
+          ],
+          "content_completeness": 84,
+          "match_confidence": 0.7926,
+          "rooms": [],
+          "activities": [
+            {
+              "activity_name": "Taj Mahal Skip-the-Line Small Group (3 hours)",
+              "equivalence_class": "taj_guided",
+              "duration_hours": 3.0,
+              "experience_type": "Small group",
+              "access_type": "Skip-the-line",
+              "transfers": "Included \u2014 hotel pickup",
+              "included_services": [
+                "Licensed guide",
+                "Skip-the-line entry",
+                "Hotel transfers"
+              ],
+              "offers": [
+                {
+                  "price": 2800.0,
+                  "meals": "Not included",
+                  "cancellation_policy": "Partial cancellation",
+                  "max_group_size": 8,
+                  "slots_available": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SG-2002",
+      "category": "sightseeing",
+      "canonical_name": "India Gate & Rajpath Walking Tour, New Delhi",
+      "city": "New Delhi",
+      "region": "Delhi NCR",
+      "address": "India Gate, Rajpath, New Delhi 110001",
+      "star_rating": null,
+      "latitude": 28.6129,
+      "longitude": 77.2295,
+      "status": "confirmed",
+      "description": "Guided heritage walk around India Gate and the Rajpath ceremonial axis.",
+      "listings": [
+        {
+          "supplier": "Supplier Atlas",
+          "supplier_property_id": "IG-AT-11",
+          "name": "India Gate & Rajpath Walking Tour",
+          "address": "India Gate, Rajpath, New Delhi",
+          "latitude": 28.6129,
+          "longitude": 77.2295,
+          "star_rating": null,
+          "amenities": [
+            "English guide",
+            "Walking tour"
+          ],
+          "content_completeness": 87,
+          "match_confidence": 0.7592,
+          "rooms": [],
+          "activities": [
+            {
+              "activity_name": "India Gate Heritage Walk (2.5 hours)",
+              "equivalence_class": "indiagate_walk",
+              "duration_hours": 2.5,
+              "experience_type": "Small group",
+              "access_type": "Standard entry",
+              "transfers": "Not included",
+              "included_services": [
+                "Licensed guide",
+                "Bottled water"
+              ],
+              "offers": [
+                {
+                  "price": 950.0,
+                  "meals": "Not included",
+                  "cancellation_policy": "Free cancellation",
+                  "max_group_size": 10,
+                  "slots_available": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "supplier": "Supplier Meridian",
+          "supplier_property_id": "IG-MR-12",
+          "name": "India Gate Guided Walk with Guide",
+          "address": "Rajpath, New Delhi",
+          "latitude": 28.6133,
+          "longitude": 77.2288,
+          "star_rating": null,
+          "amenities": [
+            "English guide"
+          ],
+          "content_completeness": 72,
+          "match_confidence": 0.7592,
+          "rooms": [],
+          "activities": [
+            {
+              "activity_name": "India Gate Guided Walk (3 hours)",
+              "equivalence_class": "indiagate_walk",
+              "duration_hours": 3.0,
+              "experience_type": "Shared group",
+              "access_type": "Standard entry",
+              "transfers": "Not included",
+              "included_services": [
+                "Licensed guide"
+              ],
+              "offers": [
+                {
+                  "price": 780.0,
+                  "meals": "Not included",
+                  "cancellation_policy": "Free cancellation",
+                  "max_group_size": 20,
+                  "slots_available": 14
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SG-2003",
+      "category": "sightseeing",
+      "canonical_name": "Qutub Minar Heritage Walk, New Delhi",
+      "city": "New Delhi",
+      "region": "Delhi NCR",
+      "address": "Mehrauli, New Delhi 110030",
+      "star_rating": null,
+      "latitude": 28.5245,
+      "longitude": 77.1855,
+      "status": "proposed",
+      "description": "Guided walk through the Qutub complex and Mehrauli archaeological park.",
+      "listings": [
+        {
+          "supplier": "Supplier Meridian",
+          "supplier_property_id": "QM-MR-31",
+          "name": "Qutub Minar Guided Tour",
+          "address": "Mehrauli, New Delhi",
+          "latitude": 28.5245,
+          "longitude": 77.1855,
+          "star_rating": null,
+          "amenities": [
+            "English guide",
+            "Monument entry"
+          ],
+          "content_completeness": 76,
+          "match_confidence": 0.8347,
+          "rooms": [],
+          "activities": [
+            {
+              "activity_name": "Qutub Minar Guided Tour (2 hours)",
+              "equivalence_class": "qutub_walk",
+              "duration_hours": 2.0,
+              "experience_type": "Shared group",
+              "access_type": "Standard entry",
+              "transfers": "Not included",
+              "included_services": [
+                "Licensed guide",
+                "Monument entry ticket"
+              ],
+              "offers": [
+                {
+                  "price": 1100.0,
+                  "meals": "Not included",
+                  "cancellation_policy": "Free cancellation",
+                  "max_group_size": 15,
+                  "slots_available": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "supplier": "Supplier Horizon",
+          "supplier_property_id": "QM-HZ-32",
+          "name": "Qutub Minar Heritage Tour with Transfers",
+          "address": "Mehrauli Archaeological Park, New Delhi",
+          "latitude": 28.5239,
+          "longitude": 77.1861,
+          "star_rating": null,
+          "amenities": [
+            "English guide",
+            "Monument entry",
+            "Hotel transfers"
+          ],
+          "content_completeness": 85,
+          "match_confidence": 0.8347,
+          "rooms": [],
+          "activities": [
+            {
+              "activity_name": "Qutub Minar Heritage Tour (3 hours)",
+              "equivalence_class": "qutub_walk",
+              "duration_hours": 3.0,
+              "experience_type": "Private",
+              "access_type": "Standard entry",
+              "transfers": "Included \u2014 hotel pickup",
+              "included_services": [
+                "Licensed guide",
+                "Monument entry ticket",
+                "Hotel transfers",
+                "Air-conditioned car"
+              ],
+              "offers": [
+                {
+                  "price": 2450.0,
+                  "meals": "Not included",
+                  "cancellation_policy": "Free cancellation",
+                  "max_group_size": 4,
+                  "slots_available": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SG-2004",
+      "category": "sightseeing",
+      "canonical_name": "Amber Fort Guided Experience, Jaipur",
+      "city": "Jaipur",
+      "region": "Rajasthan",
+      "address": "Devisinghpura, Amer, Jaipur 302001",
+      "star_rating": null,
+      "latitude": 26.9855,
+      "longitude": 75.8513,
+      "status": "confirmed",
+      "description": "Guided visit to Amber Fort including the Sheesh Mahal and ramparts.",
+      "listings": [
+        {
+          "supplier": "Supplier Atlas",
+          "supplier_property_id": "AF-AT-41",
+          "name": "Amber Fort Guided Experience",
+          "address": "Amer, Jaipur",
+          "latitude": 26.9855,
+          "longitude": 75.8513,
+          "star_rating": null,
+          "amenities": [
+            "English guide",
+            "Monument entry",
+            "Hotel transfers"
+          ],
+          "content_completeness": 90,
+          "match_confidence": 0.823,
+          "rooms": [],
+          "activities": [
+            {
+              "activity_name": "Amber Fort Guided Experience (4 hours)",
+              "equivalence_class": "amber_guided",
+              "duration_hours": 4.0,
+              "experience_type": "Small group",
+              "access_type": "Standard entry",
+              "transfers": "Included \u2014 hotel pickup",
+              "included_services": [
+                "Licensed guide",
+                "Monument entry ticket",
+                "Hotel transfers",
+                "Bottled water"
+              ],
+              "offers": [
+                {
+                  "price": 2600.0,
+                  "meals": "Not included",
+                  "cancellation_policy": "Free cancellation",
+                  "max_group_size": 10,
+                  "slots_available": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "supplier": "Supplier Meridian",
+          "supplier_property_id": "AF-MR-42",
+          "name": "Amber Fort Tour Half Day",
+          "address": "Amer Road, Jaipur",
+          "latitude": 26.9861,
+          "longitude": 75.8509,
+          "star_rating": null,
+          "amenities": [
+            "English guide",
+            "Monument entry"
+          ],
+          "content_completeness": 74,
+          "match_confidence": 0.823,
+          "rooms": [],
+          "activities": [
+            {
+              "activity_name": "Amber Fort Half Day Tour (3 hours)",
+              "equivalence_class": "amber_guided",
+              "duration_hours": 3.0,
+              "experience_type": "Shared group",
+              "access_type": "Standard entry",
+              "transfers": "Not included",
+              "included_services": [
+                "Licensed guide",
+                "Monument entry ticket"
+              ],
+              "offers": [
+                {
+                  "price": 1650.0,
+                  "meals": "Not included",
+                  "cancellation_policy": "Non-refundable",
+                  "max_group_size": 18,
+                  "slots_available": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "supplier": "Supplier Horizon",
+          "supplier_property_id": "AF-HZ-43",
+          "name": "Amber Fort Skip-the-Line Tour",
+          "address": "Devisinghpura, Amer, Jaipur",
+          "latitude": 26.9851,
+          "longitude": 75.8517,
+          "star_rating": null,
+          "amenities": [
+            "English guide",
+            "Skip-the-line entry",
+            "Hotel transfers"
+          ],
+          "content_completeness": 82,
+          "match_confidence": 0.7848,
+          "rooms": [],
+          "activities": [
+            {
+              "activity_name": "Amber Fort Skip-the-Line Tour (3.5 hours)",
+              "equivalence_class": "amber_guided",
+              "duration_hours": 3.5,
+              "experience_type": "Private",
+              "access_type": "Skip-the-line",
+              "transfers": "Included \u2014 hotel pickup",
+              "included_services": [
+                "Licensed guide",
+                "Skip-the-line entry",
+                "Hotel transfers"
+              ],
+              "offers": [
+                {
+                  "price": 3400.0,
+                  "meals": "Not included",
+                  "cancellation_policy": "Free cancellation",
+                  "max_group_size": 6,
+                  "slots_available": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SG-2005",
+      "category": "sightseeing",
+      "canonical_name": "Agra Fort Guided Tour, Agra",
+      "city": "Agra",
+      "region": "Uttar Pradesh",
+      "address": "Rakabganj, Agra 282003",
+      "star_rating": null,
+      "latitude": 27.1795,
+      "longitude": 78.0211,
+      "status": "confirmed",
+      "description": "Guided tour of the Agra Fort complex with optional transfer arrangements.",
+      "listings": [
+        {
+          "supplier": "Supplier Atlas",
+          "supplier_property_id": "AGF-AT-51",
+          "name": "Agra Fort Guided Tour",
+          "address": "Rakabganj, Agra",
+          "latitude": 27.1795,
+          "longitude": 78.0211,
+          "star_rating": null,
+          "amenities": [
+            "English guide",
+            "Monument entry",
+            "Hotel transfers"
+          ],
+          "content_completeness": 88,
+          "match_confidence": 0.7455,
+          "rooms": [],
+          "activities": [
+            {
+              "activity_name": "Agra Fort Guided Tour (2.5 hours)",
+              "equivalence_class": "agrafort_guided",
+              "duration_hours": 2.5,
+              "experience_type": "Shared group",
+              "access_type": "Standard entry",
+              "transfers": "Included \u2014 hotel pickup",
+              "included_services": [
+                "Licensed guide",
+                "Monument entry ticket",
+                "Hotel transfers"
+              ],
+              "offers": [
+                {
+                  "price": 1800.0,
+                  "meals": "Not included",
+                  "cancellation_policy": "Free cancellation",
+                  "max_group_size": 12,
+                  "slots_available": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "supplier": "Supplier Meridian",
+          "supplier_property_id": "AGF-MR-52",
+          "name": "Agra Fort Tour with Skip-the-Line Entry",
+          "address": "Agra Fort, Rakabganj, Agra",
+          "latitude": 27.1801,
+          "longitude": 78.0205,
+          "star_rating": null,
+          "amenities": [
+            "English guide",
+            "Skip-the-line entry"
+          ],
+          "content_completeness": 79,
+          "match_confidence": 0.7455,
+          "rooms": [],
+          "activities": [
+            {
+              "activity_name": "Agra Fort Tour with Skip-the-Line (2 hours)",
+              "equivalence_class": "agrafort_guided",
+              "duration_hours": 2.0,
+              "experience_type": "Shared group",
+              "access_type": "Skip-the-line",
+              "transfers": "Not included",
+              "included_services": [
+                "Licensed guide",
+                "Skip-the-line entry"
+              ],
+              "offers": [
+                {
+                  "price": 1550.0,
+                  "meals": "Not included",
+                  "cancellation_policy": "Partial cancellation",
+                  "max_group_size": 15,
+                  "slots_available": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "match_candidates": [
+    {
+      "listing_a_id": 1,
+      "listing_b_id": 2,
+      "category": "hotel",
+      "confidence": 0.8787,
+      "band": "high",
+      "status": "approved",
+      "evidence": {
+        "name_similarity": 0.8817,
+        "geo_similarity": 0.9317,
+        "distance_m": 85,
+        "address_similarity": 0.8904,
+        "attribute_agreement": 0.75,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.3086,
+          "geo": 0.2795,
+          "address": 0.1781,
+          "attributes": 0.1125
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": []
+    },
+    {
+      "listing_a_id": 1,
+      "listing_b_id": 3,
+      "category": "hotel",
+      "confidence": 0.8489,
+      "band": "medium",
+      "status": "approved",
+      "evidence": {
+        "name_similarity": 0.8966,
+        "geo_similarity": 0.9465,
+        "distance_m": 66,
+        "address_similarity": 0.6555,
+        "attribute_agreement": 0.8,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.3138,
+          "geo": 0.2839,
+          "address": 0.1311,
+          "attributes": 0.12
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": []
+    },
+    {
+      "listing_a_id": 1,
+      "listing_b_id": 29,
+      "category": "hotel",
+      "confidence": 0.3778,
+      "band": "low",
+      "status": "pending",
+      "evidence": {
+        "name_similarity": 0.7185,
+        "geo_similarity": 0.1757,
+        "distance_m": 2087,
+        "address_similarity": 0.3305,
+        "attribute_agreement": 0.05,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.2515,
+          "geo": 0.0527,
+          "address": 0.0661,
+          "attributes": 0.0075
+        },
+        "caps_applied": [
+          "Star class differs by two or more",
+          "Conflicting attribute present \u2014 human review required"
+        ],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [
+        "Star rating differs (5\u2605 vs 3\u2605)"
+      ],
+      "missing": []
+    },
+    {
+      "listing_a_id": 1,
+      "listing_b_id": 30,
+      "category": "hotel",
+      "confidence": 0.4166,
+      "band": "low",
+      "status": "pending",
+      "evidence": {
+        "name_similarity": 0.7268,
+        "geo_similarity": 0.0322,
+        "distance_m": 4123,
+        "address_similarity": 0.4349,
+        "attribute_agreement": 0.4375,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.2544,
+          "geo": 0.0097,
+          "address": 0.087,
+          "attributes": 0.0656
+        },
+        "caps_applied": [
+          "Listings are more than 3 km apart",
+          "Conflicting attribute present \u2014 human review required"
+        ],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [
+        "Star rating differs (5\u2605 vs 4\u2605)"
+      ],
+      "missing": []
+    },
+    {
+      "listing_a_id": 2,
+      "listing_b_id": 3,
+      "category": "hotel",
+      "confidence": 0.8495,
+      "band": "medium",
+      "status": "approved",
+      "evidence": {
+        "name_similarity": 0.8759,
+        "geo_similarity": 0.8833,
+        "distance_m": 149,
+        "address_similarity": 0.7647,
+        "attribute_agreement": 0.8333,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.3066,
+          "geo": 0.265,
+          "address": 0.1529,
+          "attributes": 0.125
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": []
+    },
+    {
+      "listing_a_id": 2,
+      "listing_b_id": 29,
+      "category": "hotel",
+      "confidence": 0.3859,
+      "band": "low",
+      "status": "pending",
+      "evidence": {
+        "name_similarity": 0.7098,
+        "geo_similarity": 0.1665,
+        "distance_m": 2152,
+        "address_similarity": 0.3437,
+        "attribute_agreement": 0.125,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.2484,
+          "geo": 0.05,
+          "address": 0.0687,
+          "attributes": 0.0187
+        },
+        "caps_applied": [
+          "Star class differs by two or more",
+          "Conflicting attribute present \u2014 human review required"
+        ],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [
+        "Star rating differs (5\u2605 vs 3\u2605)"
+      ],
+      "missing": []
+    },
+    {
+      "listing_a_id": 2,
+      "listing_b_id": 30,
+      "category": "hotel",
+      "confidence": 0.414,
+      "band": "low",
+      "status": "pending",
+      "evidence": {
+        "name_similarity": 0.7327,
+        "geo_similarity": 0.0302,
+        "distance_m": 4202,
+        "address_similarity": 0.3941,
+        "attribute_agreement": 0.4643,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.2564,
+          "geo": 0.0091,
+          "address": 0.0788,
+          "attributes": 0.0696
+        },
+        "caps_applied": [
+          "Listings are more than 3 km apart",
+          "Conflicting attribute present \u2014 human review required"
+        ],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [
+        "Star rating differs (5\u2605 vs 4\u2605)"
+      ],
+      "missing": []
+    },
+    {
+      "listing_a_id": 3,
+      "listing_b_id": 29,
+      "category": "hotel",
+      "confidence": 0.3728,
+      "band": "low",
+      "status": "pending",
+      "evidence": {
+        "name_similarity": 0.7207,
+        "geo_similarity": 0.1849,
+        "distance_m": 2026,
+        "address_similarity": 0.2423,
+        "attribute_agreement": 0.1111,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.2522,
+          "geo": 0.0555,
+          "address": 0.0485,
+          "attributes": 0.0167
+        },
+        "caps_applied": [
+          "Star class differs by two or more",
+          "Conflicting attribute present \u2014 human review required"
+        ],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [
+        "Star rating differs (5\u2605 vs 3\u2605)"
+      ],
+      "missing": []
+    },
+    {
+      "listing_a_id": 3,
+      "listing_b_id": 30,
+      "category": "hotel",
+      "confidence": 0.38,
+      "band": "low",
+      "status": "pending",
+      "evidence": {
+        "name_similarity": 0.7363,
+        "geo_similarity": 0.034,
+        "distance_m": 4057,
+        "address_similarity": 0.2322,
+        "attribute_agreement": 0.4375,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.2577,
+          "geo": 0.0102,
+          "address": 0.0464,
+          "attributes": 0.0656
+        },
+        "caps_applied": [
+          "Listings are more than 3 km apart",
+          "Conflicting attribute present \u2014 human review required"
+        ],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [
+        "Star rating differs (5\u2605 vs 4\u2605)"
+      ],
+      "missing": []
+    },
+    {
+      "listing_a_id": 4,
+      "listing_b_id": 5,
+      "category": "hotel",
+      "confidence": 0.8599,
+      "band": "high",
+      "status": "pending",
+      "evidence": {
+        "name_similarity": 0.8293,
+        "geo_similarity": 0.9151,
+        "distance_m": 106,
+        "address_similarity": 0.7725,
+        "attribute_agreement": 0.9375,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.2903,
+          "geo": 0.2745,
+          "address": 0.1545,
+          "attributes": 0.1406
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": []
+    },
+    {
+      "listing_a_id": 6,
+      "listing_b_id": 7,
+      "category": "hotel",
+      "confidence": 0.8402,
+      "band": "medium",
+      "status": "approved",
+      "evidence": {
+        "name_similarity": 0.6766,
+        "geo_similarity": 0.9465,
+        "distance_m": 66,
+        "address_similarity": 0.8943,
+        "attribute_agreement": 0.9375,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.2368,
+          "geo": 0.2839,
+          "address": 0.1789,
+          "attributes": 0.1406
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": []
+    },
+    {
+      "listing_a_id": 6,
+      "listing_b_id": 8,
+      "category": "hotel",
+      "confidence": 0.8552,
+      "band": "high",
+      "status": "approved",
+      "evidence": {
+        "name_similarity": 0.8977,
+        "geo_similarity": 0.9232,
+        "distance_m": 96,
+        "address_similarity": 0.6638,
+        "attribute_agreement": 0.875,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.3142,
+          "geo": 0.277,
+          "address": 0.1328,
+          "attributes": 0.1313
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": []
+    },
+    {
+      "listing_a_id": 7,
+      "listing_b_id": 8,
+      "category": "hotel",
+      "confidence": 0.7958,
+      "band": "medium",
+      "status": "approved",
+      "evidence": {
+        "name_similarity": 0.6799,
+        "geo_similarity": 0.874,
+        "distance_m": 162,
+        "address_similarity": 0.8532,
+        "attribute_agreement": 0.8333,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.238,
+          "geo": 0.2622,
+          "address": 0.1706,
+          "attributes": 0.125
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": []
+    },
+    {
+      "listing_a_id": 9,
+      "listing_b_id": 10,
+      "category": "hotel",
+      "confidence": 0.84,
+      "band": "medium",
+      "status": "pending",
+      "evidence": {
+        "name_similarity": 0.9479,
+        "geo_similarity": 0.8991,
+        "distance_m": 128,
+        "address_similarity": 0.877,
+        "attribute_agreement": 0.5357,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.3318,
+          "geo": 0.2697,
+          "address": 0.1754,
+          "attributes": 0.0804
+        },
+        "caps_applied": [
+          "Conflicting attribute present \u2014 human review required"
+        ],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [
+        "Star rating differs (5\u2605 vs 4\u2605)"
+      ],
+      "missing": []
+    },
+    {
+      "listing_a_id": 11,
+      "listing_b_id": 12,
+      "category": "hotel",
+      "confidence": 0.9229,
+      "band": "high",
+      "status": "approved",
+      "evidence": {
+        "name_similarity": 0.952,
+        "geo_similarity": 0.9344,
+        "distance_m": 81,
+        "address_similarity": 0.8717,
+        "attribute_agreement": 0.9,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.3332,
+          "geo": 0.2803,
+          "address": 0.1743,
+          "attributes": 0.135
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": []
+    },
+    {
+      "listing_a_id": 13,
+      "listing_b_id": 14,
+      "category": "hotel",
+      "confidence": 0.8208,
+      "band": "medium",
+      "status": "approved",
+      "evidence": {
+        "name_similarity": 0.6038,
+        "geo_similarity": 0.9323,
+        "distance_m": 84,
+        "address_similarity": 0.8991,
+        "attribute_agreement": 1.0,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.2113,
+          "geo": 0.2797,
+          "address": 0.1798,
+          "attributes": 0.15
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": []
+    },
+    {
+      "listing_a_id": 15,
+      "listing_b_id": 16,
+      "category": "hotel",
+      "confidence": 0.8806,
+      "band": "high",
+      "status": "pending",
+      "evidence": {
+        "name_similarity": 0.8048,
+        "geo_similarity": 0.9122,
+        "distance_m": 110,
+        "address_similarity": 0.93,
+        "attribute_agreement": 0.9286,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.2817,
+          "geo": 0.2737,
+          "address": 0.186,
+          "attributes": 0.1393
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": []
+    },
+    {
+      "listing_a_id": 17,
+      "listing_b_id": 18,
+      "category": "sightseeing",
+      "confidence": 0.7702,
+      "band": "medium",
+      "status": "approved",
+      "evidence": {
+        "name_similarity": 0.7421,
+        "geo_similarity": 0.9115,
+        "distance_m": 111,
+        "address_similarity": 0.8294,
+        "attribute_agreement": 0.5,
+        "weights": {
+          "name": 0.3,
+          "geo": 0.4,
+          "address": 0.1,
+          "attributes": 0.2
+        },
+        "contributions": {
+          "name": 0.2226,
+          "geo": 0.3646,
+          "address": 0.0829,
+          "attributes": 0.1
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": [
+        "Star rating not published by one supplier"
+      ]
+    },
+    {
+      "listing_a_id": 17,
+      "listing_b_id": 19,
+      "category": "sightseeing",
+      "confidence": 0.7926,
+      "band": "medium",
+      "status": "approved",
+      "evidence": {
+        "name_similarity": 0.7574,
+        "geo_similarity": 0.9635,
+        "distance_m": 45,
+        "address_similarity": 1.0,
+        "attribute_agreement": 0.4,
+        "weights": {
+          "name": 0.3,
+          "geo": 0.4,
+          "address": 0.1,
+          "attributes": 0.2
+        },
+        "contributions": {
+          "name": 0.2272,
+          "geo": 0.3854,
+          "address": 0.1,
+          "attributes": 0.08
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": [
+        "Star rating not published by one supplier"
+      ]
+    },
+    {
+      "listing_a_id": 18,
+      "listing_b_id": 19,
+      "category": "sightseeing",
+      "confidence": 0.6776,
+      "band": "low",
+      "status": "approved",
+      "evidence": {
+        "name_similarity": 0.644,
+        "geo_similarity": 0.8786,
+        "distance_m": 155,
+        "address_similarity": 0.8294,
+        "attribute_agreement": 0.25,
+        "weights": {
+          "name": 0.3,
+          "geo": 0.4,
+          "address": 0.1,
+          "attributes": 0.2
+        },
+        "contributions": {
+          "name": 0.1932,
+          "geo": 0.3514,
+          "address": 0.0829,
+          "attributes": 0.05
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": [
+        "Star rating not published by one supplier"
+      ]
+    },
+    {
+      "listing_a_id": 20,
+      "listing_b_id": 21,
+      "category": "sightseeing",
+      "confidence": 0.7592,
+      "band": "medium",
+      "status": "approved",
+      "evidence": {
+        "name_similarity": 0.6729,
+        "geo_similarity": 0.9343,
+        "distance_m": 82,
+        "address_similarity": 0.8364,
+        "attribute_agreement": 0.5,
+        "weights": {
+          "name": 0.3,
+          "geo": 0.4,
+          "address": 0.1,
+          "attributes": 0.2
+        },
+        "contributions": {
+          "name": 0.2019,
+          "geo": 0.3737,
+          "address": 0.0836,
+          "attributes": 0.1
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": [
+        "Star rating not published by one supplier"
+      ]
+    },
+    {
+      "listing_a_id": 22,
+      "listing_b_id": 23,
+      "category": "sightseeing",
+      "confidence": 0.8347,
+      "band": "medium",
+      "status": "pending",
+      "evidence": {
+        "name_similarity": 0.834,
+        "geo_similarity": 0.9287,
+        "distance_m": 89,
+        "address_similarity": 0.797,
+        "attribute_agreement": 0.6667,
+        "weights": {
+          "name": 0.3,
+          "geo": 0.4,
+          "address": 0.1,
+          "attributes": 0.2
+        },
+        "contributions": {
+          "name": 0.2502,
+          "geo": 0.3715,
+          "address": 0.0797,
+          "attributes": 0.1333
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": [
+        "Star rating not published by one supplier"
+      ]
+    },
+    {
+      "listing_a_id": 24,
+      "listing_b_id": 25,
+      "category": "sightseeing",
+      "confidence": 0.823,
+      "band": "medium",
+      "status": "approved",
+      "evidence": {
+        "name_similarity": 0.7589,
+        "geo_similarity": 0.9374,
+        "distance_m": 78,
+        "address_similarity": 0.8702,
+        "attribute_agreement": 0.6667,
+        "weights": {
+          "name": 0.3,
+          "geo": 0.4,
+          "address": 0.1,
+          "attributes": 0.2
+        },
+        "contributions": {
+          "name": 0.2277,
+          "geo": 0.375,
+          "address": 0.087,
+          "attributes": 0.1333
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": [
+        "Star rating not published by one supplier"
+      ]
+    },
+    {
+      "listing_a_id": 24,
+      "listing_b_id": 26,
+      "category": "sightseeing",
+      "confidence": 0.7848,
+      "band": "medium",
+      "status": "approved",
+      "evidence": {
+        "name_similarity": 0.7475,
+        "geo_similarity": 0.9516,
+        "distance_m": 60,
+        "address_similarity": 0.7989,
+        "attribute_agreement": 0.5,
+        "weights": {
+          "name": 0.3,
+          "geo": 0.4,
+          "address": 0.1,
+          "attributes": 0.2
+        },
+        "contributions": {
+          "name": 0.2243,
+          "geo": 0.3806,
+          "address": 0.0799,
+          "attributes": 0.1
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": [
+        "Star rating not published by one supplier"
+      ]
+    },
+    {
+      "listing_a_id": 25,
+      "listing_b_id": 26,
+      "category": "sightseeing",
+      "confidence": 0.7047,
+      "band": "low",
+      "status": "approved",
+      "evidence": {
+        "name_similarity": 0.7963,
+        "geo_similarity": 0.8924,
+        "distance_m": 137,
+        "address_similarity": 0.5887,
+        "attribute_agreement": 0.25,
+        "weights": {
+          "name": 0.3,
+          "geo": 0.4,
+          "address": 0.1,
+          "attributes": 0.2
+        },
+        "contributions": {
+          "name": 0.2389,
+          "geo": 0.357,
+          "address": 0.0589,
+          "attributes": 0.05
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": [
+        "Star rating not published by one supplier"
+      ]
+    },
+    {
+      "listing_a_id": 27,
+      "listing_b_id": 28,
+      "category": "sightseeing",
+      "confidence": 0.7455,
+      "band": "medium",
+      "status": "approved",
+      "evidence": {
+        "name_similarity": 0.7996,
+        "geo_similarity": 0.9283,
+        "distance_m": 89,
+        "address_similarity": 0.8429,
+        "attribute_agreement": 0.25,
+        "weights": {
+          "name": 0.3,
+          "geo": 0.4,
+          "address": 0.1,
+          "attributes": 0.2
+        },
+        "contributions": {
+          "name": 0.2399,
+          "geo": 0.3713,
+          "address": 0.0843,
+          "attributes": 0.05
+        },
+        "caps_applied": [],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [],
+      "missing": [
+        "Star rating not published by one supplier"
+      ]
+    },
+    {
+      "listing_a_id": 29,
+      "listing_b_id": 30,
+      "category": "hotel",
+      "confidence": 0.3885,
+      "band": "low",
+      "status": "pending",
+      "evidence": {
+        "name_similarity": 0.5685,
+        "geo_similarity": 0.1556,
+        "distance_m": 2232,
+        "address_similarity": 0.4515,
+        "attribute_agreement": 0.35,
+        "weights": {
+          "name": 0.35,
+          "geo": 0.3,
+          "address": 0.2,
+          "attributes": 0.15
+        },
+        "contributions": {
+          "name": 0.199,
+          "geo": 0.0467,
+          "address": 0.0903,
+          "attributes": 0.0525
+        },
+        "caps_applied": [
+          "Conflicting attribute present \u2014 human review required"
+        ],
+        "band_thresholds": {
+          "high": 0.85,
+          "medium": 0.72
+        }
+      },
+      "conflicts": [
+        "Star rating differs (3\u2605 vs 4\u2605)"
+      ],
+      "missing": []
+    }
+  ]
+}

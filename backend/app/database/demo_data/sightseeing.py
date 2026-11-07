@@ -1,0 +1,523 @@
+"""Synthetic sightseeing inventory used by the demo seed.
+
+PROVENANCE: Attraction names are real-world anchors. Every tour offer, price and
+supplier property ID is synthetic demonstration data and must not be presented
+as real supplier inventory.
+"""
+
+SIGHTSEEING_GROUPS = [
+    {
+        "code": "SG-2001",
+        "canonical_name": "Taj Mahal Guided Experience, Agra",
+        "city": "Agra",
+        "region": "Uttar Pradesh",
+        "address": "Taj Mahal, Dharmapuri, Forest Colony, Agra 282001",
+        "star_rating": None,
+        "latitude": 27.1751,
+        "longitude": 78.0421,
+        "status": "confirmed",
+        "description": "Guided visit to the Taj Mahal with monument entry. Supplier tour formats differ materially.",
+        "listings": [
+            {
+                "supplier": "ATLAS",
+                "supplier_property_id": "TAJ-AT-01",
+                "name": "Taj Mahal Guided Visit with Transfers",
+                "address": "Taj Mahal East Gate, Agra",
+                "latitude": 27.1751,
+                "longitude": 78.0421,
+                "star_rating": None,
+                "amenities": ["English guide", "Monument entry", "Hotel transfers", "Breakfast"],
+                "content_completeness": 92,
+                "activities": [
+                    {
+                        "activity_name": "Taj Mahal Guided Visit (4 hours)",
+                        "equivalence_class": "taj_guided",
+                        "activity_type": "Guided monument visit",
+                        "duration_hours": 4.0,
+                        "experience_type": "Shared group",
+                        "access_type": "Standard entry",
+                        "included_services": ["Licensed guide", "Monument entry ticket", "Breakfast", "Hotel transfers", "Bottled water"],
+                        "transfers": "Included — hotel pickup",
+                        "meeting_point": "Hotel lobby",
+                        "languages": ["English", "Hindi"],
+                        "offers": [
+                            {
+                                "price": 3200,
+                                "price_basis": "Per person",
+                                "meals": "Breakfast included",
+                                "access_included": "Standard entry",
+                                "cancellation_policy": "Free cancellation",
+                                "cancellation_window_hours": 48,
+                                "max_group_size": 12,
+                                "slots_available": 8,
+                            }
+                        ],
+                    }
+                ],
+            },
+            {
+                "supplier": "MERIDIAN",
+                "supplier_property_id": "TAJ-MR-22",
+                "name": "Taj Mahal Tour (2 hrs, no transfers)",
+                "address": "Taj Mahal West Gate, Agra",
+                "latitude": 27.1745,
+                "longitude": 78.0430,
+                "star_rating": None,
+                "amenities": ["English guide", "Monument entry"],
+                "content_completeness": 70,
+                "activities": [
+                    {
+                        "activity_name": "Taj Mahal Express Tour (2 hours)",
+                        "equivalence_class": "taj_guided",
+                        "activity_type": "Guided monument visit",
+                        "duration_hours": 2.0,
+                        "experience_type": "Shared group",
+                        "access_type": "Standard entry",
+                        "included_services": ["Licensed guide", "Monument entry ticket"],
+                        "transfers": "Not included",
+                        "meeting_point": "Taj Mahal West Gate ticket counter",
+                        "languages": ["English"],
+                        "offers": [
+                            {
+                                "price": 1900,
+                                "price_basis": "Per person",
+                                "meals": "Not included",
+                                "access_included": "Standard entry",
+                                "cancellation_policy": "Non-refundable",
+                                "cancellation_window_hours": None,
+                                "max_group_size": 15,
+                                "slots_available": 12,
+                            }
+                        ],
+                    }
+                ],
+            },
+            {
+                "supplier": "HORIZON",
+                "supplier_property_id": "TAJ-HZ-33",
+                "name": "Taj Mahal Skip-the-Line Guided Experience",
+                "address": "Taj Mahal East Gate, Agra",
+                "latitude": 27.1754,
+                "longitude": 78.0418,
+                "star_rating": None,
+                "amenities": ["English guide", "Skip-the-line entry", "Hotel transfers"],
+                "content_completeness": 84,
+                "activities": [
+                    {
+                        "activity_name": "Taj Mahal Skip-the-Line Small Group (3 hours)",
+                        "equivalence_class": "taj_guided",
+                        "activity_type": "Guided monument visit",
+                        "duration_hours": 3.0,
+                        "experience_type": "Small group",
+                        "access_type": "Skip-the-line",
+                        "included_services": ["Licensed guide", "Skip-the-line entry", "Hotel transfers"],
+                        "transfers": "Included — hotel pickup",
+                        "meeting_point": "Hotel lobby",
+                        "languages": ["English", "Hindi", "French"],
+                        "offers": [
+                            {
+                                "price": 2800,
+                                "price_basis": "Per person",
+                                "meals": "Not included",
+                                "access_included": "Skip-the-line",
+                                "cancellation_policy": "Partial cancellation",
+                                "cancellation_window_hours": 24,
+                                "max_group_size": 8,
+                                "slots_available": 5,
+                            }
+                        ],
+                    }
+                ],
+            },
+        ],
+    },
+    {
+        "code": "SG-2002",
+        "canonical_name": "India Gate & Rajpath Walking Tour, New Delhi",
+        "city": "New Delhi",
+        "region": "Delhi NCR",
+        "address": "India Gate, Rajpath, New Delhi 110001",
+        "star_rating": None,
+        "latitude": 28.6129,
+        "longitude": 77.2295,
+        "status": "confirmed",
+        "description": "Guided heritage walk around India Gate and the Rajpath ceremonial axis.",
+        "listings": [
+            {
+                "supplier": "ATLAS",
+                "supplier_property_id": "IG-AT-11",
+                "name": "India Gate & Rajpath Walking Tour",
+                "address": "India Gate, Rajpath, New Delhi",
+                "latitude": 28.6129,
+                "longitude": 77.2295,
+                "star_rating": None,
+                "amenities": ["English guide", "Walking tour"],
+                "content_completeness": 87,
+                "activities": [
+                    {
+                        "activity_name": "India Gate Heritage Walk (2.5 hours)",
+                        "equivalence_class": "indiagate_walk",
+                        "activity_type": "Guided walking tour",
+                        "duration_hours": 2.5,
+                        "experience_type": "Small group",
+                        "access_type": "Standard entry",
+                        "included_services": ["Licensed guide", "Bottled water"],
+                        "transfers": "Not included",
+                        "meeting_point": "India Gate main lawn",
+                        "languages": ["English", "Hindi"],
+                        "offers": [
+                            {
+                                "price": 950,
+                                "price_basis": "Per person",
+                                "meals": "Not included",
+                                "access_included": "Standard entry",
+                                "cancellation_policy": "Free cancellation",
+                                "cancellation_window_hours": 24,
+                                "max_group_size": 10,
+                                "slots_available": 9,
+                            }
+                        ],
+                    }
+                ],
+            },
+            {
+                "supplier": "MERIDIAN",
+                "supplier_property_id": "IG-MR-12",
+                "name": "India Gate Guided Walk with Guide",
+                "address": "Rajpath, New Delhi",
+                "latitude": 28.6133,
+                "longitude": 77.2288,
+                "star_rating": None,
+                "amenities": ["English guide"],
+                "content_completeness": 72,
+                "activities": [
+                    {
+                        "activity_name": "India Gate Guided Walk (3 hours)",
+                        "equivalence_class": "indiagate_walk",
+                        "activity_type": "Guided walking tour",
+                        "duration_hours": 3.0,
+                        "experience_type": "Shared group",
+                        "access_type": "Standard entry",
+                        "included_services": ["Licensed guide"],
+                        "transfers": "Not included",
+                        "meeting_point": "India Gate main lawn",
+                        "languages": ["English"],
+                        "offers": [
+                            {
+                                "price": 780,
+                                "price_basis": "Per person",
+                                "meals": "Not included",
+                                "access_included": "Standard entry",
+                                "cancellation_policy": "Free cancellation",
+                                "cancellation_window_hours": 48,
+                                "max_group_size": 20,
+                                "slots_available": 14,
+                            }
+                        ],
+                    }
+                ],
+            },
+        ],
+    },
+    {
+        "code": "SG-2003",
+        "canonical_name": "Qutub Minar Heritage Walk, New Delhi",
+        "city": "New Delhi",
+        "region": "Delhi NCR",
+        "address": "Mehrauli, New Delhi 110030",
+        "star_rating": None,
+        "latitude": 28.5245,
+        "longitude": 77.1855,
+        "status": "proposed",
+        "description": "Guided walk through the Qutub complex and Mehrauli archaeological park.",
+        "listings": [
+            {
+                "supplier": "MERIDIAN",
+                "supplier_property_id": "QM-MR-31",
+                "name": "Qutub Minar Guided Tour",
+                "address": "Mehrauli, New Delhi",
+                "latitude": 28.5245,
+                "longitude": 77.1855,
+                "star_rating": None,
+                "amenities": ["English guide", "Monument entry"],
+                "content_completeness": 76,
+                "activities": [
+                    {
+                        "activity_name": "Qutub Minar Guided Tour (2 hours)",
+                        "equivalence_class": "qutub_walk",
+                        "activity_type": "Guided monument visit",
+                        "duration_hours": 2.0,
+                        "experience_type": "Shared group",
+                        "access_type": "Standard entry",
+                        "included_services": ["Licensed guide", "Monument entry ticket"],
+                        "transfers": "Not included",
+                        "meeting_point": "Qutub Minar ticket office",
+                        "languages": ["English"],
+                        "offers": [
+                            {
+                                "price": 1100,
+                                "price_basis": "Per person",
+                                "meals": "Not included",
+                                "access_included": "Standard entry",
+                                "cancellation_policy": "Free cancellation",
+                                "cancellation_window_hours": 24,
+                                "max_group_size": 15,
+                                "slots_available": 7,
+                            }
+                        ],
+                    }
+                ],
+            },
+            {
+                "supplier": "HORIZON",
+                "supplier_property_id": "QM-HZ-32",
+                "name": "Qutub Minar Heritage Tour with Transfers",
+                "address": "Mehrauli Archaeological Park, New Delhi",
+                "latitude": 28.5239,
+                "longitude": 77.1861,
+                "star_rating": None,
+                "amenities": ["English guide", "Monument entry", "Hotel transfers"],
+                "content_completeness": 85,
+                "activities": [
+                    {
+                        "activity_name": "Qutub Minar Heritage Tour (3 hours)",
+                        "equivalence_class": "qutub_walk",
+                        "activity_type": "Guided monument visit",
+                        "duration_hours": 3.0,
+                        "experience_type": "Private",
+                        "access_type": "Standard entry",
+                        "included_services": ["Licensed guide", "Monument entry ticket", "Hotel transfers", "Air-conditioned car"],
+                        "transfers": "Included — hotel pickup",
+                        "meeting_point": "Hotel lobby",
+                        "languages": ["English", "Hindi", "German"],
+                        "offers": [
+                            {
+                                "price": 2450,
+                                "price_basis": "Per person",
+                                "meals": "Not included",
+                                "access_included": "Standard entry",
+                                "cancellation_policy": "Free cancellation",
+                                "cancellation_window_hours": 48,
+                                "max_group_size": 4,
+                                "slots_available": 3,
+                            }
+                        ],
+                    }
+                ],
+            },
+        ],
+    },
+    {
+        "code": "SG-2004",
+        "canonical_name": "Amber Fort Guided Experience, Jaipur",
+        "city": "Jaipur",
+        "region": "Rajasthan",
+        "address": "Devisinghpura, Amer, Jaipur 302001",
+        "star_rating": None,
+        "latitude": 26.9855,
+        "longitude": 75.8513,
+        "status": "confirmed",
+        "description": "Guided visit to Amber Fort including the Sheesh Mahal and ramparts.",
+        "listings": [
+            {
+                "supplier": "ATLAS",
+                "supplier_property_id": "AF-AT-41",
+                "name": "Amber Fort Guided Experience",
+                "address": "Amer, Jaipur",
+                "latitude": 26.9855,
+                "longitude": 75.8513,
+                "star_rating": None,
+                "amenities": ["English guide", "Monument entry", "Hotel transfers"],
+                "content_completeness": 90,
+                "activities": [
+                    {
+                        "activity_name": "Amber Fort Guided Experience (4 hours)",
+                        "equivalence_class": "amber_guided",
+                        "activity_type": "Guided monument visit",
+                        "duration_hours": 4.0,
+                        "experience_type": "Small group",
+                        "access_type": "Standard entry",
+                        "included_services": ["Licensed guide", "Monument entry ticket", "Hotel transfers", "Bottled water"],
+                        "transfers": "Included — hotel pickup",
+                        "meeting_point": "Hotel lobby",
+                        "languages": ["English", "Hindi"],
+                        "offers": [
+                            {
+                                "price": 2600,
+                                "price_basis": "Per person",
+                                "meals": "Not included",
+                                "access_included": "Standard entry",
+                                "cancellation_policy": "Free cancellation",
+                                "cancellation_window_hours": 48,
+                                "max_group_size": 10,
+                                "slots_available": 6,
+                            }
+                        ],
+                    }
+                ],
+            },
+            {
+                "supplier": "MERIDIAN",
+                "supplier_property_id": "AF-MR-42",
+                "name": "Amber Fort Tour Half Day",
+                "address": "Amer Road, Jaipur",
+                "latitude": 26.9861,
+                "longitude": 75.8509,
+                "star_rating": None,
+                "amenities": ["English guide", "Monument entry"],
+                "content_completeness": 74,
+                "activities": [
+                    {
+                        "activity_name": "Amber Fort Half Day Tour (3 hours)",
+                        "equivalence_class": "amber_guided",
+                        "activity_type": "Guided monument visit",
+                        "duration_hours": 3.0,
+                        "experience_type": "Shared group",
+                        "access_type": "Standard entry",
+                        "included_services": ["Licensed guide", "Monument entry ticket"],
+                        "transfers": "Not included",
+                        "meeting_point": "Amber Fort ticket counter",
+                        "languages": ["English"],
+                        "offers": [
+                            {
+                                "price": 1650,
+                                "price_basis": "Per person",
+                                "meals": "Not included",
+                                "access_included": "Standard entry",
+                                "cancellation_policy": "Non-refundable",
+                                "cancellation_window_hours": None,
+                                "max_group_size": 18,
+                                "slots_available": 11,
+                            }
+                        ],
+                    }
+                ],
+            },
+            {
+                "supplier": "HORIZON",
+                "supplier_property_id": "AF-HZ-43",
+                "name": "Amber Fort Skip-the-Line Tour",
+                "address": "Devisinghpura, Amer, Jaipur",
+                "latitude": 26.9851,
+                "longitude": 75.8517,
+                "star_rating": None,
+                "amenities": ["English guide", "Skip-the-line entry", "Hotel transfers"],
+                "content_completeness": 82,
+                "activities": [
+                    {
+                        "activity_name": "Amber Fort Skip-the-Line Tour (3.5 hours)",
+                        "equivalence_class": "amber_guided",
+                        "activity_type": "Guided monument visit",
+                        "duration_hours": 3.5,
+                        "experience_type": "Private",
+                        "access_type": "Skip-the-line",
+                        "included_services": ["Licensed guide", "Skip-the-line entry", "Hotel transfers"],
+                        "transfers": "Included — hotel pickup",
+                        "meeting_point": "Hotel lobby",
+                        "languages": ["English", "Hindi", "Spanish"],
+                        "offers": [
+                            {
+                                "price": 3400,
+                                "price_basis": "Per person",
+                                "meals": "Not included",
+                                "access_included": "Skip-the-line",
+                                "cancellation_policy": "Free cancellation",
+                                "cancellation_window_hours": 24,
+                                "max_group_size": 6,
+                                "slots_available": 2,
+                            }
+                        ],
+                    }
+                ],
+            },
+        ],
+    },
+    {
+        "code": "SG-2005",
+        "canonical_name": "Agra Fort Guided Tour, Agra",
+        "city": "Agra",
+        "region": "Uttar Pradesh",
+        "address": "Rakabganj, Agra 282003",
+        "star_rating": None,
+        "latitude": 27.1795,
+        "longitude": 78.0211,
+        "status": "confirmed",
+        "description": "Guided tour of the Agra Fort complex with optional transfer arrangements.",
+        "listings": [
+            {
+                "supplier": "ATLAS",
+                "supplier_property_id": "AGF-AT-51",
+                "name": "Agra Fort Guided Tour",
+                "address": "Rakabganj, Agra",
+                "latitude": 27.1795,
+                "longitude": 78.0211,
+                "star_rating": None,
+                "amenities": ["English guide", "Monument entry", "Hotel transfers"],
+                "content_completeness": 88,
+                "activities": [
+                    {
+                        "activity_name": "Agra Fort Guided Tour (2.5 hours)",
+                        "equivalence_class": "agrafort_guided",
+                        "activity_type": "Guided monument visit",
+                        "duration_hours": 2.5,
+                        "experience_type": "Shared group",
+                        "access_type": "Standard entry",
+                        "included_services": ["Licensed guide", "Monument entry ticket", "Hotel transfers"],
+                        "transfers": "Included — hotel pickup",
+                        "meeting_point": "Hotel lobby",
+                        "languages": ["English", "Hindi"],
+                        "offers": [
+                            {
+                                "price": 1800,
+                                "price_basis": "Per person",
+                                "meals": "Not included",
+                                "access_included": "Standard entry",
+                                "cancellation_policy": "Free cancellation",
+                                "cancellation_window_hours": 24,
+                                "max_group_size": 12,
+                                "slots_available": 7,
+                            }
+                        ],
+                    }
+                ],
+            },
+            {
+                "supplier": "MERIDIAN",
+                "supplier_property_id": "AGF-MR-52",
+                "name": "Agra Fort Tour with Skip-the-Line Entry",
+                "address": "Agra Fort, Rakabganj, Agra",
+                "latitude": 27.1801,
+                "longitude": 78.0205,
+                "star_rating": None,
+                "amenities": ["English guide", "Skip-the-line entry"],
+                "content_completeness": 79,
+                "activities": [
+                    {
+                        "activity_name": "Agra Fort Tour with Skip-the-Line (2 hours)",
+                        "equivalence_class": "agrafort_guided",
+                        "activity_type": "Guided monument visit",
+                        "duration_hours": 2.0,
+                        "experience_type": "Shared group",
+                        "access_type": "Skip-the-line",
+                        "included_services": ["Licensed guide", "Skip-the-line entry"],
+                        "transfers": "Not included",
+                        "meeting_point": "Agra Fort Amar Singh Gate",
+                        "languages": ["English"],
+                        "offers": [
+                            {
+                                "price": 1550,
+                                "price_basis": "Per person",
+                                "meals": "Not included",
+                                "access_included": "Skip-the-line",
+                                "cancellation_policy": "Partial cancellation",
+                                "cancellation_window_hours": 24,
+                                "max_group_size": 15,
+                                "slots_available": 9,
+                            }
+                        ],
+                    }
+                ],
+            },
+        ],
+    },
+]

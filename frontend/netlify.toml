@@ -1,0 +1,36 @@
+# ---------------------------------------------------------------------------
+# OfferLens — Netlify configuration (frontend only)
+#
+# Drag-and-drop deploy: upload the contents of `dist/` (which already contains
+# `_redirects`). Git deploy: connect the repo; the values below are used.
+#
+# The React app calls the FastAPI backend. Before building, set
+#   VITE_API_BASE_URL = https://your-offerlens-api.onrender.com
+# in Site settings → Environment variables (or run:
+#   VITE_API_BASE_URL=https://… npm run build)
+# ---------------------------------------------------------------------------
+[build]
+  base = "frontend"
+  command = "npm ci && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SPA fallback — keeps deep links and page refreshes working.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# ---------------------------------------------------------------------------
+# OPTIONAL: same-origin API proxy (avoids CORS entirely).
+# Uncomment, replace the host with your deployed API, and build WITHOUT
+# VITE_API_BASE_URL (the app then uses "/api" and Netlify proxies it).
+#
+# [[redirects]]
+#   from = "/api/*"
+#   to = "https://YOUR-API-HOST.onrender.com/api/:splat"
+#   status = 200
+#   force = true
+# ---------------------------------------------------------------------------

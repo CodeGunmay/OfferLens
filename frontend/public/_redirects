@@ -1,0 +1,5 @@
+# Netlify SPA routing — every unknown path is served the app shell so deep
+# links such as /hotels/HG-1001 work on refresh instead of returning 404.
+# The API is NOT proxied here: point the build at your FastAPI URL with
+# VITE_API_BASE_URL (see netlify.toml / DEPLOYMENT.md).
+/*    /index.html   200
